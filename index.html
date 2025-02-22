@@ -10,14 +10,14 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #002c6a, #004aad);
+            color: white;
             text-align: center;
         }
         .header {
-            background: #0073e6;
-            color: white;
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 600;
         }
         .container {
@@ -34,6 +34,7 @@
             font-size: 18px;
             border-radius: 5px;
             text-decoration: none;
+            font-weight: bold;
         }
         .cta:hover {
             background: #cc5500;
@@ -47,11 +48,12 @@
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
             width: 30%;
+            color: black;
         }
         .plan h3 {
-            color: #0073e6;
+            color: #004aad;
         }
         .price {
             font-size: 24px;
@@ -64,18 +66,26 @@
             font-size: 16px;
             text-decoration: line-through;
         }
+        .testimonials {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">Automatiza tus Redes Sociales y Aumenta tu Productividad 🚀</div>
     <div class="container">
         <h2>Optimiza tu tiempo con nuestras soluciones de automatización</h2>
+        <p>Mejora la eficiencia de tu negocio con herramientas inteligentes que trabajan por ti.</p>
         <ul style="list-style: none; padding: 0;">
             <li>✔ Publicaciones programadas</li>
             <li>✔ Respuestas automáticas</li>
             <li>✔ Interacciones inteligentes</li>
+            <li>✔ Aumento de engagement</li>
         </ul>
-        <a href="https://wa.me/51924912130" class="cta">Contáctame por WhatsApp</a>
+        <a href="https://wa.me/51924912130" class="cta">Hablemos por WhatsApp</a>
         
         <div class="plans">
             <div class="plan">
@@ -84,26 +94,32 @@
                 <p>✔ Publicaciones programadas</p>
                 <p>✔ Respuestas automáticas básicas</p>
                 <p>✔ Reporte mensual básico</p>
-                <a href="https://wa.me/51924912130?text=Hola,%20quiero%20adquirir%20el%20paquete%20Básico%20de%20automatización" class="cta">Elegir Básico</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20B%C3%A1sico%20de%20automatizaci%C3%B3n" class="cta">Elegir Básico</a>
             </div>
             <div class="plan">
-                <h3>Intermedio 💼</h3>
+                <h3>Pro 💼</h3>
                 <p class="price">€500 <span class="discount">€700</span></p>
                 <p>✔ Todo lo del plan Básico</p>
                 <p>✔ Interacciones inteligentes</p>
                 <p>✔ Soporte prioritario</p>
                 <p>✔ Reporte detallado con métricas</p>
-                <a href="https://wa.me/51924912130?text=Hola,%20quiero%20adquirir%20el%20paquete%20Intermedio%20de%20automatización" class="cta">Elegir Intermedio</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Intermedio%20de%20automatizaci%C3%B3n" class="cta">Elegir Pro</a>
             </div>
             <div class="plan">
-                <h3>Avanzado 👑</h3>
+                <h3>Premium 👑</h3>
                 <p class="price">€1000 <span class="discount">€1500</span></p>
-                <p>✔ Todo lo del plan Intermedio</p>
+                <p>✔ Todo lo del plan Pro</p>
                 <p>✔ IA avanzada para respuestas</p>
                 <p>✔ Optimización de engagement</p>
                 <p>✔ Análisis de competencia</p>
-                <a href="https://wa.me/51924912130?text=Hola,%20quiero%20adquirir%20el%20paquete%20Avanzado%20de%20automatización" class="cta">Elegir Avanzado</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Avanzado%20de%20automatizaci%C3%B3n" class="cta">Elegir Premium</a>
             </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>📢 Lo que dicen nuestros clientes</h2>
+            <p>🌟 "Desde que implementé la automatización, mi engagement ha aumentado un 70%. ¡Recomiendo 100%!" - Juan Pérez</p>
+            <p>🌟 "Antes perdía horas respondiendo mensajes, ahora todo está automatizado y puedo enfocarme en mi negocio." - María López</p>
         </div>
     </div>
 </body>
