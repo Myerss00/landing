@@ -3,44 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto AI - Automatización Inteligente</title>
+    <title>Auto AI - Automatización de Redes Sociales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background: linear-gradient(135deg, #0A2540, #00D4FF); color: white; text-align: center; padding: 20px; }
-        .container { max-width: 900px; margin: auto; }
-        .header { font-size: 32px; font-weight: bold; margin-bottom: 20px; }
-        .cta-button { background: #FF6B00; color: white; padding: 15px 30px; font-size: 18px; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; text-decoration: none; display: inline-block; margin-top: 20px; }
-        .cta-button:hover { background: #E65C00; }
-        .features { margin-top: 30px; text-align: left; }
-        .feature-item { display: flex; align-items: center; margin: 10px 0; }
-        .feature-item img { width: 30px; margin-right: 10px; }
-        .testimonials { margin-top: 40px; }
-        .testimonial { background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; margin-top: 15px; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .cta {
+            background: #ff6600;
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta:hover {
+            background: #cc5500;
+        }
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .plan {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .plan h3 {
+            color: #0073e6;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ff6600;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
+    <div class="header">Automatiza tus Redes Sociales y Aumenta tu Productividad 🚀</div>
     <div class="container">
-        <div class="header">🚀 Auto AI - Automatiza tu éxito en redes sociales</div>
-        <p>Optimiza tu tiempo con inteligencia artificial y aumenta tu productividad.</p>
+        <h2>Optimiza tu tiempo con nuestras soluciones de automatización</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>✔ Publicaciones programadas</li>
+            <li>✔ Respuestas automáticas</li>
+            <li>✔ Interacciones inteligentes</li>
+        </ul>
+        <a href="https://wa.me/51924912130" class="cta">Contáctame por WhatsApp</a>
         
-        <div class="features">
-            <div class="feature-item">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/checked.png" alt="check"> Publicaciones programadas automáticamente
+        <div class="plans">
+            <div class="plan">
+                <h3>Básico 🚀</h3>
+                <p class="price">$29/mes</p>
+                <p>✔ Publicaciones programadas</p>
+                <p>✔ Respuestas automáticas básicas</p>
+                <p>✔ Reporte mensual básico</p>
+                <a href="#" class="cta">Elegir Básico</a>
             </div>
-            <div class="feature-item">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/robot.png" alt="bot"> Respuestas automáticas con IA
+            <div class="plan">
+                <h3>Pro 💼</h3>
+                <p class="price">$59/mes</p>
+                <p>✔ Todo lo del plan Básico</p>
+                <p>✔ Interacciones inteligentes</p>
+                <p>✔ Soporte prioritario</p>
+                <p>✔ Reporte detallado con métricas</p>
+                <a href="#" class="cta">Elegir Pro</a>
             </div>
-            <div class="feature-item">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/communication.png" alt="chat"> Interacciones inteligentes con clientes
+            <div class="plan">
+                <h3>Premium 👑</h3>
+                <p class="price">$99/mes</p>
+                <p>✔ Todo lo del plan Pro</p>
+                <p>✔ IA avanzada para respuestas</p>
+                <p>✔ Optimización de engagement</p>
+                <p>✔ Análisis de competencia</p>
+                <a href="#" class="cta">Elegir Premium</a>
             </div>
-        </div>
-        
-        <a class="cta-button" href="https://wa.me/51924912130">📩 Contáctame por WhatsApp</a>
-        
-        <div class="testimonials">
-            <h2>💡 Lo que dicen nuestros clientes</h2>
-            <div class="testimonial">"Auto AI me ayudó a gestionar mis redes sin esfuerzo. ¡100% recomendado!" - Ana R.</div>
-            <div class="testimonial">"Gracias a Auto AI, aumenté mis ventas un 40%. ¡Increíble herramienta!" - Juan M.</div>
         </div>
     </div>
 </body>
