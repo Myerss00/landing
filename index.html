@@ -10,20 +10,26 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #002c6a, #004aad);
-            color: white;
+            background-color: #f4f4f4;
             text-align: center;
+            scroll-behavior: smooth;
         }
         .header {
-            background: rgba(0, 0, 0, 0.7);
+            background: #004080;
+            color: white;
             padding: 20px;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 600;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .container {
             max-width: 900px;
             margin: auto;
-            padding: 20px;
+            padding: 80px 20px 20px;
         }
         .cta {
             background: #ff6600;
@@ -34,7 +40,6 @@
             font-size: 18px;
             border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
         }
         .cta:hover {
             background: #cc5500;
@@ -48,12 +53,15 @@
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             width: 30%;
-            color: black;
+            transition: transform 0.3s;
+        }
+        .plan:hover {
+            transform: scale(1.05);
         }
         .plan h3 {
-            color: #004aad;
+            color: #004080;
         }
         .price {
             font-size: 24px;
@@ -67,25 +75,45 @@
             text-decoration: line-through;
         }
         .testimonials {
-            margin-top: 40px;
-            background: rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            background: #e0f7fa;
             padding: 20px;
             border-radius: 10px;
+        }
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .faq {
+            margin-top: 50px;
+            text-align: left;
+        }
+        .faq h3 {
+            color: #004080;
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="header">Automatiza tus Redes Sociales y Aumenta tu Productividad 🚀</div>
+    <div class="header">Auto AI - Automatización Inteligente 🚀</div>
     <div class="container">
         <h2>Optimiza tu tiempo con nuestras soluciones de automatización</h2>
-        <p>Mejora la eficiencia de tu negocio con herramientas inteligentes que trabajan por ti.</p>
         <ul style="list-style: none; padding: 0;">
             <li>✔ Publicaciones programadas</li>
             <li>✔ Respuestas automáticas</li>
             <li>✔ Interacciones inteligentes</li>
-            <li>✔ Aumento de engagement</li>
         </ul>
-        <a href="https://wa.me/51924912130" class="cta">Hablemos por WhatsApp</a>
+        <a href="https://wa.me/51924912130" class="cta">Contáctame por WhatsApp</a>
         
         <div class="plans">
             <div class="plan">
@@ -94,33 +122,40 @@
                 <p>✔ Publicaciones programadas</p>
                 <p>✔ Respuestas automáticas básicas</p>
                 <p>✔ Reporte mensual básico</p>
-                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20B%C3%A1sico%20de%20automatizaci%C3%B3n" class="cta">Elegir Básico</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Básico" class="cta">Elegir Básico</a>
             </div>
             <div class="plan">
-                <h3>Pro 💼</h3>
+                <h3>Intermedio 💼</h3>
                 <p class="price">€500 <span class="discount">€700</span></p>
                 <p>✔ Todo lo del plan Básico</p>
                 <p>✔ Interacciones inteligentes</p>
                 <p>✔ Soporte prioritario</p>
                 <p>✔ Reporte detallado con métricas</p>
-                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Intermedio%20de%20automatizaci%C3%B3n" class="cta">Elegir Pro</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Intermedio" class="cta">Elegir Intermedio</a>
             </div>
             <div class="plan">
-                <h3>Premium 👑</h3>
+                <h3>Avanzado 👑</h3>
                 <p class="price">€1000 <span class="discount">€1500</span></p>
-                <p>✔ Todo lo del plan Pro</p>
+                <p>✔ Todo lo del plan Intermedio</p>
                 <p>✔ IA avanzada para respuestas</p>
                 <p>✔ Optimización de engagement</p>
                 <p>✔ Análisis de competencia</p>
-                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Avanzado%20de%20automatizaci%C3%B3n" class="cta">Elegir Premium</a>
+                <a href="https://wa.me/51924912130?text=Quiero%20el%20plan%20Avanzado" class="cta">Elegir Avanzado</a>
             </div>
         </div>
-        
         <div class="testimonials">
-            <h2>📢 Lo que dicen nuestros clientes</h2>
-            <p>🌟 "Desde que implementé la automatización, mi engagement ha aumentado un 70%. ¡Recomiendo 100%!" - Juan Pérez</p>
-            <p>🌟 "Antes perdía horas respondiendo mensajes, ahora todo está automatizado y puedo enfocarme en mi negocio." - María López</p>
+            <h2>Clientes Felices 💬</h2>
+            <p class="testimonial">"Auto AI transformó mi negocio, ahora tengo más tiempo para enfocarme en lo que realmente importa." - Carlos M.</p>
+            <p class="testimonial">"Las interacciones inteligentes aumentaron el engagement de mis redes un 300%. ¡Increíble!" - Laura G.</p>
+        </div>
+        <div class="faq">
+            <h2>Preguntas Frecuentes ❓</h2>
+            <h3>📌 ¿Cómo funciona la automatización?</h3>
+            <p>Analizamos tus necesidades y configuramos herramientas para optimizar tu tiempo.</p>
+            <h3>📌 ¿Necesito conocimientos técnicos?</h3>
+            <p>No, nos encargamos de todo por ti.</p>
         </div>
     </div>
+    <a href="https://wa.me/51924912130" class="floating-whatsapp">📩 Chat en Vivo</a>
 </body>
 </html>
