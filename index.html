@@ -13,23 +13,27 @@
             background-color: #0a192f;
             color: white;
             text-align: center;
+            overflow-x: hidden;
         }
         .hero {
-            background: url('https://media.istockphoto.com/id/1367967285/es/foto/software-de-automatizaci%C3%B3n-tecnolog%C3%ADa-sistema-de-procesos-concepto-de-negocio.jpg?s=612x612&w=0&k=20&c=Jj7Um4_FqRT72tFHDY2wXasoXjKrx3n2I23w0TsWQOk=') no-repeat center;
+            background: url('https://media.istockphoto.com/id/1494104649/es/foto/ai-chatbot-concepto-digital-de-inteligencia-artificial.jpg?s=612x612&w=0&k=20&c=7u7J6m1ID0DND-SZLtXVslw_5WGTEmQSY_U-LpokSxA=') no-repeat center;
             background-size: cover;
             padding: 100px 20px;
             position: relative;
+            animation: fadeIn 1.5s ease-in-out;
         }
         .hero h1 {
             font-size: 48px;
             font-weight: 600;
             color: #ffb400;
-            animation: fadeIn 1.5s ease-in-out;
+            animation: slideIn 1.5s ease-in-out;
         }
         .hero p {
             font-size: 20px;
             max-width: 600px;
             margin: auto;
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
         }
         .cta {
             background: #ff6600;
@@ -41,16 +45,18 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: 0.3s;
+            transition: transform 0.3s, background 0.3s;
         }
         .cta:hover {
             background: #cc5500;
+            transform: scale(1.1);
         }
         .plans {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
         .plan {
             background: #112240;
@@ -59,10 +65,12 @@
             box-shadow: 0px 0px 15px rgba(0, 115, 230, 0.5);
             width: 30%;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
         }
         .plan:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
         .plan h3 {
             color: #00d8ff;
@@ -79,43 +87,35 @@
             font-size: 16px;
             text-decoration: line-through;
         }
-        .features {
-            margin-top: 60px;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .feature-item {
-            background: #112240;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-        }
-        .testimonials {
+        .testimonials, .faq {
             margin-top: 50px;
             padding: 20px;
         }
-        .testimonial {
+        .testimonial, .faq-item {
             background: #112240;
             padding: 20px;
             margin: 10px auto;
             max-width: 700px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
         }
-        .faq {
-            margin-top: 50px;
-            padding: 20px;
+        .testimonial:hover, .faq-item:hover {
+            transform: scale(1.05);
         }
-        .faq-item {
-            background: #112240;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 700px;
-            border-radius: 10px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -124,13 +124,6 @@
         <h1>Automatiza tus Redes Sociales 🚀</h1>
         <p>Optimiza tu tiempo y aumenta la interacción con inteligencia artificial.</p>
         <a href="https://wa.me/51924912130" class="cta">¡Contáctame Ahora!</a>
-    </div>
-    
-    <div class="features">
-        <div class="feature-item">✔ Publicaciones programadas</div>
-        <div class="feature-item">✔ Respuestas automatizadas</div>
-        <div class="feature-item">✔ Reportes detallados</div>
-        <div class="feature-item">✔ Análisis de competencia</div>
     </div>
     
     <div class="plans">
@@ -154,10 +147,10 @@
     <div class="testimonials">
         <h2>Testimonios</h2>
         <div class="testimonial">
-            <p>"Desde que implementamos AutoAI, nuestro engagement ha aumentado en un 75%."</p>
+            <p>"Desde que implementamos AutoAI, nuestro engagement ha aumentado en un 75%. ¡Increíble solución!"</p>
         </div>
         <div class="testimonial">
-            <p>"La automatización de respuestas ha mejorado nuestra atención al cliente."</p>
+            <p>"La automatización de respuestas ha mejorado nuestra atención al cliente. Ahorro de tiempo y mayor eficiencia."</p>
         </div>
     </div>
     
