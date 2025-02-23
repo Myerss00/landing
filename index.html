@@ -12,6 +12,7 @@
             padding: 0;
             background-color: #eef4fc;
             text-align: center;
+            scroll-behavior: smooth;
         }
         .header {
             background: #0073e6;
@@ -19,11 +20,16 @@
             padding: 20px;
             font-size: 24px;
             font-weight: 600;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .container {
             max-width: 900px;
             margin: auto;
-            padding: 20px;
+            padding: 100px 20px 20px;
         }
         .cta {
             background: #ff6600;
@@ -34,6 +40,7 @@
             font-size: 18px;
             border-radius: 5px;
             text-decoration: none;
+            transition: 0.3s;
         }
         .cta:hover {
             background: #cc5500;
@@ -41,6 +48,7 @@
         .plans {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 40px;
         }
         .plan {
@@ -49,6 +57,10 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             width: 30%;
+            transition: transform 0.3s;
+        }
+        .plan:hover {
+            transform: scale(1.05);
         }
         .plan h3 {
             color: #0073e6;
@@ -64,13 +76,29 @@
             font-size: 16px;
             text-decoration: line-through;
         }
+        .testimonials, .faq, .about {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <div class="header">Automatiza tus Redes Sociales y Aumenta tu Productividad 🚀</div>
     <div class="container">
         <h2>Optimiza tu tiempo con nuestras soluciones de automatización</h2>
-        <ul style="list-style: none; padding: 0;">
+        <ul>
             <li>✔ Publicaciones programadas</li>
             <li>✔ Respuestas automáticas</li>
             <li>✔ Interacciones inteligentes</li>
@@ -84,7 +112,7 @@
                 <p>✔ Publicaciones programadas</p>
                 <p>✔ Respuestas automáticas básicas</p>
                 <p>✔ Reporte mensual básico</p>
-                <a href="https://wa.me/51924912130?text=Hola,%20estoy%20interesado%20en%20el%20plan%20Básico%20de%20Auto%20AI." class="cta">Quiero el Básico</a>
+                <a href="https://wa.me/51924912130?text=Hola,%20estoy%20interesado%20en%20el%20plan%20Básico" class="cta">Quiero el Básico</a>
             </div>
             <div class="plan">
                 <h3>Pro 💼</h3>
@@ -93,7 +121,7 @@
                 <p>✔ Interacciones inteligentes</p>
                 <p>✔ Soporte prioritario</p>
                 <p>✔ Reporte detallado con métricas</p>
-                <a href="https://wa.me/51924912130?text=Hola,%20quiero%20más%20información%20sobre%20el%20plan%20Pro%20de%20Auto%20AI." class="cta">Quiero el Pro</a>
+                <a href="https://wa.me/51924912130?text=Hola,%20quiero%20más%20información%20sobre%20el%20plan%20Pro" class="cta">Quiero el Pro</a>
             </div>
             <div class="plan">
                 <h3>Premium 👑</h3>
@@ -102,18 +130,22 @@
                 <p>✔ IA avanzada para respuestas</p>
                 <p>✔ Optimización de engagement</p>
                 <p>✔ Análisis de competencia</p>
-                <a href="https://wa.me/51924912130?text=Estoy%20listo%20para%20automatizar%20mi%20negocio%20con%20el%20plan%20Premium%20de%20Auto%20AI." class="cta">Quiero el Premium</a>
+                <a href="https://wa.me/51924912130?text=Estoy%20listo%20para%20automatizar%20mi%20negocio%20con%20el%20plan%20Premium" class="cta">Quiero el Premium</a>
             </div>
         </div>
 
-        <h2>💼 Automatización de Negocios</h2>
-        <p>Transforma tu empresa con nuestras soluciones personalizadas.</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>🔹 <b>Automatización Básica</b>: <span class="price">€200</span> <span class="discount">€300</span></li>
-            <li>🔹 <b>Automatización Intermedia</b>: <span class="price">€500</span> <span class="discount">€700</span></li>
-            <li>🔹 <b>Automatización Avanzada</b>: <span class="price">€1000</span> <span class="discount">€1500</span></li>
-        </ul>
-        <p>¡Solicita una cotización personalizada según las necesidades de tu negocio!</p>
+        <div class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Auto AI es una agencia especializada en la automatización de redes sociales, ayudando a negocios a optimizar su tiempo y aumentar su impacto digital.</p>
+        </div>
+        
+        <div class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <p><b>¿Cómo funciona la automatización?</b><br> Utilizamos herramientas avanzadas para programar publicaciones, responder automáticamente y mejorar la interacción con tu audiencia.</p>
+            <p><b>¿Puedo personalizar mi plan?</b><br> ¡Sí! Podemos adaptar las soluciones según tus necesidades.</p>
+        </div>
     </div>
+    
+    <a href="https://wa.me/51924912130" class="whatsapp-float">💬</a>
 </body>
 </html>
