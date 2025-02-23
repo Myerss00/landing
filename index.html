@@ -17,23 +17,16 @@
         }
         .hero {
             background: url('https://media.istockphoto.com/id/1494104649/es/foto/ai-chatbot-concepto-digital-de-inteligencia-artificial.jpg?s=612x612&w=0&k=20&c=7u7J6m1ID0DND-SZLtXVslw_5WGTEmQSY_U-LpokSxA=') no-repeat center;
-            background-size: cover;
+            background-size: contain;
             padding: 100px 20px;
             position: relative;
             animation: fadeIn 1.5s ease-in-out;
         }
-        .hero h1 {
+        h1, h2, h3 {
             font-size: 48px;
             font-weight: 600;
             color: #ffb400;
-            animation: slideIn 1.5s ease-in-out;
-        }
-        .hero p {
-            font-size: 20px;
-            max-width: 600px;
-            margin: auto;
-            opacity: 0;
-            animation: fadeInText 2s ease-in-out forwards;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
         }
         .cta {
             background: #ff6600;
@@ -45,11 +38,10 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: transform 0.3s, background 0.3s;
+            transition: 0.3s;
         }
         .cta:hover {
             background: #cc5500;
-            transform: scale(1.1);
         }
         .plans {
             display: flex;
@@ -66,8 +58,6 @@
             width: 30%;
             text-align: center;
             transition: transform 0.3s ease-in-out;
-            opacity: 0;
-            animation: fadeInText 2s ease-in-out forwards;
         }
         .plan:hover {
             transform: scale(1.1);
@@ -82,40 +72,23 @@
             color: #ff6600;
             margin: 15px 0;
         }
-        .discount {
-            color: red;
-            font-size: 16px;
-            text-decoration: line-through;
+        .plan ul {
+            list-style: none;
+            padding: 0;
         }
-        .testimonials, .faq {
-            margin-top: 50px;
-            padding: 20px;
+        .plan ul li {
+            padding: 5px;
         }
-        .testimonial, .faq-item {
-            background: #112240;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 700px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease-in-out;
-            opacity: 0;
-            animation: fadeInText 2s ease-in-out forwards;
+        .faq-item {
+            cursor: pointer;
+            transition: all 0.3s;
         }
-        .testimonial:hover, .faq-item:hover {
+        .faq-item:hover {
             transform: scale(1.05);
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes fadeInText {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -130,37 +103,32 @@
         <div class="plan">
             <h3>Básico 🚀</h3>
             <p class="price">€200 <span class="discount">€300</span></p>
+            <ul>
+                <li>✅ Publicaciones automatizadas</li>
+                <li>✅ Respuestas automáticas básicas</li>
+                <li>✅ Análisis de engagement mensual</li>
+            </ul>
             <a href="https://wa.me/51924912130" class="cta">Quiero el Básico</a>
         </div>
         <div class="plan">
             <h3>Pro 💼</h3>
             <p class="price">€500 <span class="discount">€700</span></p>
+            <ul>
+                <li>✅ Publicaciones y respuestas automatizadas</li>
+                <li>✅ Análisis de métricas avanzadas</li>
+                <li>✅ Asistente IA para mensajes</li>
+            </ul>
             <a href="https://wa.me/51924912130" class="cta">Quiero el Pro</a>
         </div>
         <div class="plan">
             <h3>Premium 👑</h3>
             <p class="price">€1000 <span class="discount">€1500</span></p>
+            <ul>
+                <li>✅ IA avanzada con respuestas personalizadas</li>
+                <li>✅ Estrategia de contenido optimizada</li>
+                <li>✅ Reportes detallados semanales</li>
+            </ul>
             <a href="https://wa.me/51924912130" class="cta">Quiero el Premium</a>
-        </div>
-    </div>
-    
-    <div class="testimonials">
-        <h2>Testimonios</h2>
-        <div class="testimonial">
-            <p>"Desde que implementamos AutoAI, nuestro engagement ha aumentado en un 75%. ¡Increíble solución!"</p>
-        </div>
-        <div class="testimonial">
-            <p>"La automatización de respuestas ha mejorado nuestra atención al cliente. Ahorro de tiempo y mayor eficiencia."</p>
-        </div>
-    </div>
-    
-    <div class="faq">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <p><strong>¿Cómo funciona la automatización?</strong> - Analiza patrones y responde eficientemente.</p>
-        </div>
-        <div class="faq-item">
-            <p><strong>¿Puedo cancelar en cualquier momento?</strong> - Sí, sin contratos forzosos.</p>
         </div>
     </div>
 </body>
